@@ -60,6 +60,7 @@ public class MainFragment extends Fragment {
     }
 
 
+    //Debe ir en utileria
     public ArrayList<MarvelItem> jsonParser(String json){
         ArrayList<MarvelItem> result = new ArrayList<MarvelItem>();
 

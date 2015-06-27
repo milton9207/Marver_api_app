@@ -22,7 +22,7 @@ public class ApiMarvelDownloadFragment extends Fragment {
 
 
     public interface OnDownloadFinishedListener {
-        public void notifyDataDownloaded(String data);
+        void notifyDataDownloaded(String data);
     }
 
     private OnDownloadFinishedListener mCallBack;
@@ -77,6 +77,7 @@ public class ApiMarvelDownloadFragment extends Fragment {
 
         }
 
+        //Debe ir en utileria
         private String downloadApi()
         {
             String data ="";
@@ -104,6 +105,7 @@ public class ApiMarvelDownloadFragment extends Fragment {
 
         }
 
+        //Debe ir en utileria
         private String readStream(InputStream in)
         {
             BufferedReader reader = null;
