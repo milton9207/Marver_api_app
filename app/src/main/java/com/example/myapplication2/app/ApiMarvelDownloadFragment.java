@@ -1,10 +1,14 @@
 package com.example.myapplication2.app;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -19,6 +23,8 @@ import java.net.URL;
  * to handle interaction events.
  */
 public class ApiMarvelDownloadFragment extends Fragment {
+
+
 
 
     public interface OnDownloadFinishedListener {
@@ -134,6 +140,9 @@ public class ApiMarvelDownloadFragment extends Fragment {
             }
             return data.toString();
         }
+
+
+
     }
 
 }
